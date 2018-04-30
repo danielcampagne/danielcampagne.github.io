@@ -157,10 +157,41 @@ $( document ).ready(function() {
 
 	});
 
+	// //// Add heights to project pushers
+	// $('.project').each(function(){
+	// 	var sectionStart, sectionEnd;
+	// 	console.log($(this).children('.project__image').last().);
+	// });
+
 	//// Listener
 	document.addEventListener('scroll', (evt) => {
 		markVisible();
 	}, { capture: true, passive: true });
+
+
+/* Simple spam protection for email addresses using jQuery*/
+
+$(function() {
+ $('a[href^="mailto:"]').each(function() {
+  this.href = this.href.replace('(symbol)', '@').replace(/\(dot\)/g, '.');
+  this.innerHTML = this.href.replace('mailto:', '');
+ });
+});/* Simple spam protection for email addresses using jQuery.
+ * Well, the protection isn’t jQuery-based, but you get the idea.
+ * This snippet allows you to slightly ‘obfuscate’ email addresses to make it harder for spambots to harvest them, while still offering a readable address to your visitors.
+ * E.g.
+ * <a href="mailto:foo(at)example(dot)com">foo at example dot com</a>
+ * →
+ * <a href="mailto:foo@example.com">foo@example.com</a>
+ */
+
+$(function() {
+ $('a[href^="mailto:"]').each(function() {
+  this.href = this.href.replace('(at)', '@').replace(/\(dot\)/g, '.');
+  // Remove this line if you don't want to set the email address as link text:
+  this.innerHTML = this.href.replace('mailto:', '');
+ });
+});
 
 });
 
