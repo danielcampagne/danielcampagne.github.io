@@ -134,11 +134,24 @@ $( document ).ready(function() {
 
 
 	///// Snow overlay
+
+	var isOpen = false;
+
+	function toggleAbout() {
+		if (isOpen) {
+			$('.wrapper--projects').addClass('about-open');
+		}
+
+	}
+
 	$('.overlay__toggle').click(function(){
 		$('body').toggleClass('navigation-open');
 		$('.hamburger').toggleClass('is-active');
+		isOpen = !isOpen;
+		console.log(isOpen);
 		$(this).text(function(i, text){
-          return text === "info" ? "close" : "info";
+		  return text === "info" ? "close" : "info";
+		  toggleAbout();
       	});
 	});
 
