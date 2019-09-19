@@ -102,6 +102,16 @@ flex-direction: row;
 
 
 @media screen and (max-width: 992px) {
+  .hero header .box h1 {
+
+
+	text-align: left;
+	font-size: 7.5vw !important;
+	font-weight: 900;
+	line-height: 1.2 !important;
+	width: 77vw !important;
+
+  }
   .hero header .box {
     left: 0 !important;
     }
@@ -122,10 +132,10 @@ flex-direction: row;
 
 .hero header .box h1 {
 	text-align: left;
-	font-size: 61px;
+	font-size: 3.5vw;
 	font-weight: 900;
 	line-height: 1.2;
-	width: 967px;
+	width: 53vw;
 }
 .hero header .box svg {
   width: 110px;
