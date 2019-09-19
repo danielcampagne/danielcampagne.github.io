@@ -27,7 +27,7 @@ body {
   animation: fadeIn 2s ease-in-out;
   font-family: 'font', sans-serif;
   background-color: #080a20;
-  color: #e3dac9;
+  color: white;
 }
 .menu-wrapper{
   position: absolute;
@@ -50,7 +50,6 @@ flex-direction: row;
 }
 .hiring {
   padding: 0 !important;
-  display: inline-block;
 }
 .hiring {
   padding: 50px 0;
@@ -97,8 +96,28 @@ flex-direction: row;
 	color: white;
 	width: 321vw;
 	left: 15vw;
-	flex-direction: column;
+  flex-direction: column;
 }
+
+@media screen and (max-width: 992px) {
+  .hero header .box {
+    left: 0 !important;
+    }
+    .menu li {
+      margin-right: 70px;
+    }
+    .menu li, .hiring {
+
+      font-size: 35px !important;
+    }
+    .hiring {
+      height: 160px;
+      width: 160px;
+    }
+}
+
+
+
 .hero header .box h1 {
 	text-align: left;
 	font-size: 50px;
