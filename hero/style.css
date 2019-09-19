@@ -26,7 +26,7 @@ body {
   -moz-animation: fadeIn 2s ease-in-out;
   animation: fadeIn 2s ease-in-out;
   font-family: 'font', sans-serif;
-  background-color: #080a20;
+  background-color: #080f20;
   color: white;
 }
 .menu-wrapper{
@@ -122,10 +122,10 @@ flex-direction: row;
 
 .hero header .box h1 {
 	text-align: left;
-	font-size: 50px;
+	font-size: 61px;
 	font-weight: 900;
 	line-height: 1.2;
-	width: 786px;
+	width: 967px;
 }
 .hero header .box svg {
   width: 110px;
