@@ -1,7 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+/*@import url("https://fonts.googleapis.com/css?family=Open+Sans");*/
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+@font-face {
+  font-family: 'font';
+  src: url('fonts/asdsad.eot');
+  src: url('fonts/asdsad.eot') format('embedded-opentype'),
+       url('fonts/asdsad.woff2') format('woff2'),
+       url('fonts/asdsad.woff') format('woff'),
+       url('fonts/asdsad.ttf') format('truetype'),
+       url('fonts/asdsad.svg#asdsad') format('svg');
+}
+
 
 * {
   margin: 0;
@@ -14,11 +25,45 @@ body {
   -webkit-animation: fadeIn 2s ease-in-out;
   -moz-animation: fadeIn 2s ease-in-out;
   animation: fadeIn 2s ease-in-out;
-  font-family: 'Montserrat', sans-serif;
-  background-color: black;
+  font-family: 'font', sans-serif;
+  background-color: #080a20;
   color: #e3dac9;
 }
+.menu-wrapper{
+  position: absolute;
+  right: 7vw;
+  top: 5vh;
+  display: flex;
+flex-direction: row;
+}
+.menu {
+  list-style: none;
+	display: flex;
+	align-items: center;
 
+}
+.menu li {
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+    font-size: 16px;
+}
+.hiring {
+  padding: 0 !important;
+  display: inline-block;
+}
+.hiring {
+  padding: 50px 0;
+  background: white;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  color: black;
+  transform: rotate(5deg);
+  justify-content: center;
+}
 .hero {
   width: 100%;
   height: 100vh;
@@ -28,7 +73,7 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  opacity: .8;
+  opacity: .15;
 }
 .hero header {
   -webkit-transform: translate(-50%, -50%);
@@ -42,26 +87,29 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 .hero header .box {
   box-sizing: border-box;
-  padding: 50px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: left;
-  color: white;
-	width: 51vw;
-  flex-direction: column;
+	padding: 50px;
+	display: flex;
+	justify-content: left;
+	color: white;
+	width: 321vw;
+	left: 15vw;
+	flex-direction: column;
 }
 .hero header .box h1 {
-  text-align: left;
-
-  font-size: 3.4vw;
-  font-weight: 900;
-  line-height: 3.5vw;
+	text-align: left;
+	font-size: 50px;
+	font-weight: 900;
+	line-height: 1.2;
+	width: 786px;
 }
-
+.hero header .box svg {
+  width: 110px;
+  height: 140px;
+}
 
 .content-area {
   min-height: 50vh;
@@ -72,10 +120,10 @@ body {
 }
 
 .grid-overlay {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAAEFsT2yAAAACXBIWXMAAAsSAAALEgHS3X78AAAAFElEQVR4nGNhYGBwYIET////ZwAAETIDym2lzEcAAAAASUVORK5CYII=);
+  /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAAEFsT2yAAAACXBIWXMAAAsSAAALEgHS3X78AAAAFElEQVR4nGNhYGBwYIET////ZwAAETIDym2lzEcAAAAASUVORK5CYII=);
   background-size: 2px 2px;
   background-position: 0 0;
-  background-repeat: repeat;
+  background-repeat: repeat;*/
 }
 
 @-webkit-keyframes fadeIn {
