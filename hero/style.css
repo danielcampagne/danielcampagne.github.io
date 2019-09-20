@@ -157,7 +157,8 @@ flex-direction: row;
 	font-size: 4.3vw;
 	font-weight: 900;
 	line-height: 1.2;
-	width: 64vw;
+  width: 64vw;
+  letter-spacing: -1px;
 }
 .hero header .box svg {
   width: 6.8vw;
