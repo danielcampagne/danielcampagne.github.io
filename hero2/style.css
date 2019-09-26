@@ -90,7 +90,7 @@ flex-direction: row;
   display: flex;
   align-items: center;
 }
-.hero header .box {
+/* .hero header .box {
   box-sizing: border-box;
 	padding: 50px;
 	display: flex;
@@ -101,7 +101,7 @@ flex-direction: row;
   margin-top: -5vw;
   justify-content: center;
   width: 70vw;
-}
+} */
 
 .arrow {
   position: absolute;
@@ -114,6 +114,8 @@ flex-direction: row;
 .arrow path {
   fill:white;
 }
+
+ 
 @media screen and (max-width: 992px) {
   .hero header .box svg {
     width: 150px !important;
