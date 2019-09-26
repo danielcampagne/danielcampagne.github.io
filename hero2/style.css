@@ -243,24 +243,23 @@ flex-direction: row;
 
 }
 .videos-track {
-  /* animation: moveSlideshow 20s linear infinite; */ */
+  animation: moveSlideshow 30s linear infinite; 
   display: flex;
 }
 
 @keyframes moveSlideshow {
   100% { 
     /* transform: rotateX(-15deg) rotateY(-75deg) translateX(-100vw) translateY(38vw);;  */
-    transform: rotateX(17deg) rotateY(-75deg) translateX(-102vw) translateY(31vw);
-    
+    /* transform: rotateX(17deg) rotateY(-75deg) translateX(-102vw) translateY(31vw); */
+    transform: rotateX(17deg) rotateY(-45deg) translateX(-408vw);
   }
 }
 
  .videos-track {
   top: 0vh; 
   object-fit: cover;
-  /* transform: rotateX(-45deg) rotateY(-45deg) translateX(0);
-  transform: rotateX(-15deg) rotateY(-75deg) translateX(0) translateY(38vw); */
-  transform: rotateX(17deg) rotateY(-75deg) translateX(0) translateY(31vw);
+  /* transform: rotateX(-45deg) rotateY(-45deg) translateX(0);*/
+  /* transform: rotateX(-15deg) rotateY(-75deg) translateX(0) translateY(38vw);  */
   display: flex;
   bottom: 100;
   position: absolute;
@@ -270,4 +269,15 @@ flex-direction: row;
 
 .hero video {
   margin-right: 2vw;
+}
+
+.videos-track {
+	top: 0vh;
+	object-fit: cover;
+	transform: rotateX(17deg) rotateY(-45deg) translateX(0);
+	display: flex;
+	 /* width: 204vw;  */
+	bottom: 100;
+	position: absolute;
+	background-color: #080f20;
 }
