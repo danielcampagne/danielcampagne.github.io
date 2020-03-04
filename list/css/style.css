@@ -617,14 +617,14 @@ input {
   position: fixed;
   top: 34px;
   left: 10px;
-  width: 20px;
+  width: 16px;
   height: 60px;
 }
 
 .check label {
   display: inline;
   position: fixed;
-  left: 40px;
+  left: 30px;
   top: 56px;
 }
 

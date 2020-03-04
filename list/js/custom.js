@@ -5,6 +5,7 @@ $( document ).ready(function() {
 $('.pin').click(function(){
     $(this).toggleClass('pinned');
     updatePositions();
+    updateCoordinatesTriangles()
   });
   
   function updatePositions() {
