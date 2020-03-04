@@ -36,7 +36,7 @@ $('.pin').click(function(){
     $('.menu ul li').each(function(){
         var currentClass = $(this).attr("class");
         var eTop = $(this).offset().top; 
-        var positionMenu = eTop - $(window).scrollTop() + 2;
+        var positionMenu = eTop - $(window).scrollTop() + 5;
         var topSection =  $('.container.' + currentClass + ' .items').offset().top -  $(window).scrollTop();
         var bottomSection =  $('.container.' + currentClass + ' .items').offset().top + $('.container.' + currentClass + ' .items').outerHeight()  -  $(window).scrollTop();
         $('.container.' + currentClass + ' .triangle').css('clip-path','polygon(100% ' + topSection + 'px, 0  ' + positionMenu + 'px , 100% ' + bottomSection + 'px)') ;
@@ -66,14 +66,11 @@ $('.pin').click(function(){
       if (listHeight < windowtHeight) {
         $('.list').css('justify-content','center');
         // $('.list').css('min-height','100%');
-        
-
       } 
 
       if (listHeight > windowtHeight) {
         $('.list').css('justify-content','flex-start');
         // $('.list').css('min-height','auto');
-
       }  
 
     } else {
@@ -86,6 +83,30 @@ $('.pin').click(function(){
 
 $('#check1').click(function(){
   $('body').toggleClass('only-selected');
+
+  if ($('body').hasClass('only-selected')) {
+
+    var listHeight = $('.list').height();
+    console.log(listHeight);
+    var windowtHeight = $(window).height();
+    console.log(windowtHeight);
+
+    if (listHeight < windowtHeight) {
+      $('.list').css('justify-content','center');
+      // $('.list').css('min-height','100%');
+    } 
+
+    if (listHeight > windowtHeight) {
+      $('.list').css('justify-content','flex-start');
+      // $('.list').css('min-height','auto');
+    }  
+    
+  } else {
+    $('.list').css('justify-content','flex-start');
+  }
+
+
+
   updateCoordinatesTriangles()
 
 });
